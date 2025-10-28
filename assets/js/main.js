@@ -25,8 +25,8 @@
 
   // Simple "next meeting" & events demo data
   const sampleEvents = [
-    { id:1, title:'Weekly Chapter Meeting', date:'2025-11-03', time:'3:30 PM', venue:'Room 205' },
-    { id:2, title:'Guest Speaker — Local Representative', date:'2025-11-17', time:'3:30 PM', venue:'Auditorium' },
+    { id:1, title:'Weekly Chapter Meeting', date:'2025-10-29', time:'10:20 AM', venue:'Career Center A' },
+    { id:2, title:'Weekly Chapter Meeting', date:'2025-11-7', time:'10:20 AM', venue:'Career Center A' },
     { id:3, title:'Community Service Day', date:'2025-12-06', time:'9:00 AM', venue:'Van City Park' }
   ];
 
@@ -62,7 +62,7 @@
   if (newsList) {
     // add a sample news line
     const li = document.createElement('li');
-    li.textContent = 'New officer elections coming in November — get involved!';
+    li.textContent = 'New available — get involved!';
     newsList.insertBefore(li, newsList.firstChild);
   }
 
