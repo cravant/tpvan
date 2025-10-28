@@ -1,1 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calendar — Van High TPUSA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo-flag" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div>
+          <h1>Van High TPUSA</h1>
+          <p class="tag">Van High School — Van, TX</p>
+        </div>
+      </a>
+      <button id="navToggle4" class="nav-toggle" aria-expanded="false" aria-controls="mainNav4">☰</button>
 
+      <nav id="mainNav4" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="calendar.html" class="active">Calendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Meeting Calendar</h2>
+    <p>Below is a simple interactive calendar of chapter meetings. You can embed a Google Calendar by replacing the iframe `src` with your calendar embed URL (Settings → Integrate calendar → Embed code).</p>
+
+    <section class="calendar-wrap">
+      <div id="calendarControls" class="calendar-controls">
+        <button id="prevMonth">&larr;</button>
+        <h3 id="calendarMonth">Month</h3>
+        <button id="nextMonth">&rarr;</button>
+      </div>
+
+      <div id="calendar" class="calendar-grid" aria-live="polite"></div>
+    </section>
+
+    <section style="margin-top:2rem;">
+      <h3>Google Calendar embed (optional)</h3>
+      <div class="embed-wrap">
+        <iframe title="Google Calendar" src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FChicago" style="border: 0" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <p class="muted">Replace <code>YOUR_CALENDAR_ID</code> with your calendar's embed ID.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><strong>Van High TPUSA</strong><div class="muted">985 N Maple St, Van, TX 75790</div></div>
+        <div><a href="index.html">Home</a><br><a href="about.html">About</a><br><a href="forms.html">Forms</a></div>
+        <div><small class="muted">Contact</small><div>van-tpusa@vanisd.edu</div></div>
+      </div>
+      <div class="copyright">© <span id="year4"></span> Van High TPUSA</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
