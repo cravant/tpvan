@@ -40,7 +40,7 @@
       card.className = 'card';
       card.innerHTML = `
         <h4>${ev.title}</h4>
-        <div class="muted">${new Date(ev.date).toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'})} — ${ev.time}</div>
+        <div class="muted">${new Date(ev.date).toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'})} - ${ev.time}</div>
         <p style="margin-top:.5rem"><strong>Location:</strong> ${ev.venue}</p>
         <a class="btn" href="forms.html#join">Sign up</a>
       `;
@@ -53,7 +53,7 @@
   if (nextMeetingEl) {
     const today = new Date();
     const next = sampleEvents.find(e => parseYMD(e.date) >= today) || sampleEvents[0];
-    const pretty = `${new Date(next.date).toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})} — ${next.time}`;
+    const pretty = `${new Date(next.date).toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})} - ${next.time}`;
     nextMeetingEl.textContent = `${pretty} @ ${next.venue}`;
   }
 
