@@ -62,7 +62,7 @@
   if (newsList) {
     // add a sample news line
     const li = document.createElement('li');
-    li.textContent = 'Fundraiser May 1st!';
+    li.textContent = 'Fundraiser May 1st';
     newsList.insertBefore(li, newsList.firstChild);
   }
 
