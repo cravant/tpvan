@@ -54,7 +54,7 @@
     const today = new Date();
     const next = sampleEvents.find(e => parseYMD(e.date) >= today) || sampleEvents[0];
     const pretty = `${new Date(next.date).toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})} - ${next.time}`;
-    nextMeetingEl.textContent = `${pretty} @ ${next.venue}`;
+    nextMeetingEl.innerHTML = `${pretty}<br><span class="muted">${next.venue}</span>`;
   }
 
   // small news list injection
