@@ -41,23 +41,20 @@ body{
   object-fit: contain;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:1.2rem;
-  transform: scale(1.05);
-  transform-origin: left center;
-
-  text-decoration:none;
-  color:var(--text);
-}
-
+.brand,
 .brand:link,
 .brand:visited,
 .brand:hover,
 .brand:active{
-  text-decoration:none;
-  color:var(--text);
+  display:flex;
+  align-items:center;
+  gap:1.2rem;
+
+  text-decoration:none !important;
+  color:var(--text) !important;
+
+  transform: scale(1.05);
+  transform-origin: left center;
 }
 
 .brand div{
