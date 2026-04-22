@@ -25,9 +25,9 @@
 
   // Simple "next meeting" & events demo data
   const sampleEvents = [
-    { id:1, title:'Weekly Chapter Meeting', date:'2025-10-29', time:'10:20 AM', venue:'Career Center A' },
-    { id:2, title:'Weekly Chapter Meeting', date:'2025-11-7', time:'10:20 AM', venue:'Career Center A' },
-    { id:3, title:'Community Service Day', date:'2025-12-06', time:'9:00 AM', venue:'Van City Park' }
+    { id:1, title:'Weekly Chapter Meeting', date:'2026-04-24', time:'10:20 AM', venue:'College Career Center A' },
+    { id:2, title:'Pancake Fundraiser', date:'2026-05-01', time:'10:20 AM', venue:'College Career Center A' },
+    { id:3, title:'Weekly Chapter Meeting', date:'2028-05-08', time:'10:20 AM', venue:'College Career Center A' }
   ];
 
   function parseYMD(s){ const [y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
@@ -62,7 +62,7 @@
   if (newsList) {
     // add a sample news line
     const li = document.createElement('li');
-    li.textContent = 'New available — get involved!';
+    li.textContent = 'Fundraiser May 1st!';
     newsList.insertBefore(li, newsList.firstChild);
   }
 
