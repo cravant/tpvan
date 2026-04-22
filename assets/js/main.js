@@ -128,8 +128,8 @@
     // controls
     const prev = document.getElementById('prevMonth');
     const next = document.getElementById('nextMonth');
-    if(prev) prev.addEventListener('click', () => { state.date.setMonth(state.date.getMonth()-1); render(); });
-    if(next) next.addEventListener('click', () => { state.date.setMonth(state.date.getMonth()+1); render(); });
+   // if(prev) prev.addEventListener('click', () => { state.date.setMonth(state.date.getMonth()-1); render(); });
+    if(next) next.addEventListener('click', () => { state.date.setMonth(state.date.getMonth()+7); render(); });
 
     render();
   }
